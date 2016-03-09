@@ -31,27 +31,27 @@
 
   <name>mybatis-typehandlers-jsr310</name>
   <description>MyBatis Type Handlers supporting JSR-310</description>
-  <url>https://github.com/mybatis/mybatis-typehandlers-jsr310</url>
+  <url>https://github.com/mybatis/typehandlers-jsr310</url>
 
   <scm>
-    <url>http://github.com/mybatis/mybatis-typehandlers-jsr310</url>
-    <connection>scm:git:ssh://github.com/mybatis/mybatis-typehandlers-jsr310.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/mybatis/mybatis-typehandlers-jsr310.git</developerConnection>
+    <url>http://github.com/mybatis/typehandlers-jsr310</url>
+    <connection>scm:git:ssh://github.com/mybatis/typehandlers-jsr310.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/mybatis/typehandlers-jsr310.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Management</system>
-    <url>https://github.com/mybatis/mybatis-typehandlers-jsr310/issues</url>
+    <url>https://github.com/mybatis/typehandlers-jsr310/issues</url>
   </issueManagement>
   <ciManagement>
     <system>Travis CI</system>
-    <url>https://travis-ci.org/mybatis/mybatis-typehandlers-jsr310</url>
+    <url>https://travis-ci.org/mybatis/typehandlers-jsr310</url>
   </ciManagement>
   <distributionManagement>
     <site>
       <id>gh-pages</id>
       <name>Mybatis GitHub Pages</name>
-      <url>git:ssh://git@github.com/mybatis/mybatis-typehandlers-jsr310.git?gh-pages#</url>
+      <url>git:ssh://git@github.com/mybatis/typehandlers-jsr310.git?gh-pages#</url>
     </site>
   </distributionManagement>
 
