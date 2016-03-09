@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.mybatis</groupId>
     <artifactId>mybatis-parent</artifactId>
-    <version>26</version>
+    <version>27-SNAPSHOT</version>
     <relativePath />
   </parent>
 
@@ -58,6 +58,10 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- Animal Sniffer Signature -->
+    <signature.group>org.codehaus.mojo.signature</signature.group>
+    <signature.artifact>java18</signature.artifact>
+    <signature.version>1.0</signature.version>
   </properties>
 
   <dependencies>
