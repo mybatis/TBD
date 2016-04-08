@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalDateTimeTypeHandler,9,28,1,1,3,9,2,5,1,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,OffsetTimeTypeHandler,9,32,1,1,3,9,2,5,1,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalDateTypeHandler,9,28,1,1,3,9,2,5,1,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,InstantTypeHandler,9,28,1,1,3,9,2,5,1,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalTimeTypeHandler,9,28,1,1,3,9,2,5,1,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,OffsetDateTimeTypeHandler,16,24,1,1,5,7,3,4,2,4
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,ZonedDateTimeTypeHandler,9,31,1,1,3,9,2,5,1,5

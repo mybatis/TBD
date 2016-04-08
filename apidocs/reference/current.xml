@@ -1,0 +1,628 @@
+<api>
+<package name="org.apache.ibatis.type"
+>
+<class name="InstantTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="InstantTypeHandler"
+ type="org.apache.ibatis.type.InstantTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.Instant"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.Instant"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.Instant"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.Instant">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="LocalDateTimeTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LocalDateTimeTypeHandler"
+ type="org.apache.ibatis.type.LocalDateTimeTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.LocalDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.LocalDateTime">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="LocalDateTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LocalDateTypeHandler"
+ type="org.apache.ibatis.type.LocalDateTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.LocalDate"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalDate"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalDate"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.LocalDate">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="LocalTimeTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LocalTimeTypeHandler"
+ type="org.apache.ibatis.type.LocalTimeTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.LocalTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.LocalTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.LocalTime">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="OffsetDateTimeTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="OffsetDateTimeTypeHandler"
+ type="org.apache.ibatis.type.OffsetDateTimeTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.OffsetDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.OffsetDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.OffsetDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.OffsetDateTime">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="OffsetTimeTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="OffsetTimeTypeHandler"
+ type="org.apache.ibatis.type.OffsetTimeTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.OffsetTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.OffsetTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.OffsetTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.OffsetTime">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+<class name="ZonedDateTimeTypeHandler"
+ extends="org.apache.ibatis.type.BaseTypeHandler"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ZonedDateTimeTypeHandler"
+ type="org.apache.ibatis.type.ZonedDateTimeTypeHandler"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNullableResult"
+ return="java.time.ZonedDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.ZonedDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rs" type="java.sql.ResultSet">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="getNullableResult"
+ return="java.time.ZonedDateTime"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cs" type="java.sql.CallableStatement">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method name="setNonNullParameter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ps" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="i" type="int">
+</parameter>
+<parameter name="parameter" type="java.time.ZonedDateTime">
+</parameter>
+<parameter name="jdbcType" type="org.apache.ibatis.type.JdbcType">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</class>
+</package>
+</api>
