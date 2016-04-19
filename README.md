@@ -10,7 +10,7 @@
 
 The MyBatis type handlers supporting types introduced in JSR 310: Date and Time API.
 
-If you are using mybatis version 3.4.0-SNAPSHOT, you can simply add this artifact on your classpath and MyBatis will automatically register the provided type handlers.
+If you are using mybatis version 3.4 or later, you can simply add this artifact on your classpath and MyBatis will automatically register the provided type handlers.
 
 ```xml
 <dependency>
@@ -20,7 +20,7 @@ If you are using mybatis version 3.4.0-SNAPSHOT, you can simply add this artifac
 </dependency>
 ```
 
-If you are using mybatis 3.3.1 or older, you may also need to register the type handlers manually.
+If you are using mybatis an older version you need to register the type handlers manually.
 
 ```xml
 <typeHandlers>
