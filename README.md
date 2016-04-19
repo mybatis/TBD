@@ -20,7 +20,7 @@ If you are using mybatis version 3.4 or later, you can simply add this artifact 
 </dependency>
 ```
 
-If you are using mybatis an older version you need to register the type handlers manually.
+If you are using an older version you need to register the type handlers manually.
 
 ```xml
 <typeHandlers>
