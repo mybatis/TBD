@@ -20,7 +20,7 @@ import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.time.Year;
+import java.time.Month;
 
 import org.junit.Test;
 
@@ -30,8 +30,8 @@ import org.junit.Test;
  */
 public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
 
-  private static final TypeHandler<Year> TYPE_HANDLER = new YearTypeHandler();
-  private static final Year INSTANT = Year.now();
+  private static final TypeHandler<Month> TYPE_HANDLER = new MonthTypeHandler();
+  private static final Month INSTANT = Month.JANUARY;
 
   @Override
   @Test
@@ -81,4 +81,5 @@ public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
     when(cs.getInt(1)).thenReturn(0);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
+
 }
