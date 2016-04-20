@@ -16,6 +16,7 @@
 package org.apache.ibatis.type;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -39,9 +40,30 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
 
   @Override
   @Test
-  public void shouldGetResultFromResultSet() throws Exception {
+  public void shouldGetResultFromResultSetByName() throws Exception {
     when(rs.getDate("column")).thenReturn(DATE);
     assertEquals(LOCAL_DATE, TYPE_HANDLER.getResult(rs, "column"));
+  }
+
+  @Override
+  @Test
+  public void shouldGetResultNullFromResultSetByName() throws Exception {
+    when(rs.getDate("column")).thenReturn(null);
+    assertNull(TYPE_HANDLER.getResult(rs, "column"));
+  }
+
+  @Override
+  @Test
+  public void shouldGetResultFromResultSetByPosition() throws Exception {
+    when(rs.getDate(1)).thenReturn(DATE);
+    assertEquals(LOCAL_DATE, TYPE_HANDLER.getResult(rs, 1));
+  }
+
+  @Override
+  @Test
+  public void shouldGetResultNullFromResultSetByPosition() throws Exception {
+    when(rs.getDate(1)).thenReturn(null);
+    assertNull(TYPE_HANDLER.getResult(rs, 1));
   }
 
   @Override
@@ -49,5 +71,12 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultFromCallableStatement() throws Exception {
     when(cs.getDate(1)).thenReturn(DATE);
     assertEquals(LOCAL_DATE, TYPE_HANDLER.getResult(cs, 1));
+  }
+
+  @Override
+  @Test
+  public void shouldGetResultNullFromCallableStatement() throws Exception {
+    when(cs.getDate(1)).thenReturn(null);
+    assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 }
