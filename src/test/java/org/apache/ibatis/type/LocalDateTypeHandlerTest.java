@@ -49,6 +49,7 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromResultSetByName() throws Exception {
     when(rs.getDate("column")).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(rs, "column"));
   }
 
@@ -63,6 +64,7 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromResultSetByPosition() throws Exception {
     when(rs.getDate(1)).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(rs, 1));
   }
 
@@ -77,6 +79,7 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getDate(1)).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 }

@@ -50,6 +50,7 @@ public class OffsetTimeTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromResultSetByName() throws Exception {
     when(rs.getTime("column")).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(rs, "column"));
   }
 
@@ -64,6 +65,7 @@ public class OffsetTimeTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromResultSetByPosition() throws Exception {
     when(rs.getTime(1)).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(rs, 1));
   }
 
@@ -78,6 +80,7 @@ public class OffsetTimeTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getTime(1)).thenReturn(null);
+    when(rs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 }
