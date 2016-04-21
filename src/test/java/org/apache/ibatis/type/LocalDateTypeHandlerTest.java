@@ -79,7 +79,7 @@ public class LocalDateTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getDate(1)).thenReturn(null);
-    when(rs.wasNull()).thenReturn(true);
+    when(cs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 }

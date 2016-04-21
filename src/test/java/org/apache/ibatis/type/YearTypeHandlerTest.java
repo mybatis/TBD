@@ -81,7 +81,7 @@ public class YearTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getInt(1)).thenReturn(0);
-    when(rs.wasNull()).thenReturn(true);
+    when(cs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 

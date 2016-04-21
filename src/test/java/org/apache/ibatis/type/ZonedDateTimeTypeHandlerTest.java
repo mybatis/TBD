@@ -79,7 +79,7 @@ public class ZonedDateTimeTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getTimestamp(1)).thenReturn(null);
-    when(rs.wasNull()).thenReturn(true);
+    when(cs.wasNull()).thenReturn(true);
     assertNull(TYPE_HANDLER.getResult(cs, 1));
   }
 
