@@ -41,8 +41,8 @@ import java.time.LocalDateTime;
 
   @Override
   public LocalDateTime getNullableResult(ResultSet rs, int columnIndex) throws SQLException {
-<span class="nc" id="L44">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
-<span class="nc" id="L45">    return getLocalDateTime(timestamp);</span>
+<span class="fc" id="L44">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
+<span class="fc" id="L45">    return getLocalDateTime(timestamp);</span>
   }
 
   @Override
@@ -52,10 +52,10 @@ import java.time.LocalDateTime;
   }
 
   private static LocalDateTime getLocalDateTime(Timestamp timestamp) {
-<span class="pc bpc" id="L55" title="1 of 2 branches missed.">    if (timestamp != null) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">    if (timestamp != null) {</span>
 <span class="fc" id="L56">      return timestamp.toLocalDateTime();</span>
     }
-<span class="nc" id="L58">    return null;</span>
+<span class="fc" id="L58">    return null;</span>
   }
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

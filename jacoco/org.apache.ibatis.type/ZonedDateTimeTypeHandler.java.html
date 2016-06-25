@@ -42,8 +42,8 @@ import java.time.ZonedDateTime;
 
   @Override
   public ZonedDateTime getNullableResult(ResultSet rs, int columnIndex) throws SQLException {
-<span class="nc" id="L45">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
-<span class="nc" id="L46">    return getZonedDateTime(timestamp);</span>
+<span class="fc" id="L45">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
+<span class="fc" id="L46">    return getZonedDateTime(timestamp);</span>
   }
 
   @Override
@@ -53,10 +53,10 @@ import java.time.ZonedDateTime;
   }
 
   private static ZonedDateTime getZonedDateTime(Timestamp timestamp) {
-<span class="pc bpc" id="L56" title="1 of 2 branches missed.">    if (timestamp != null) {</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">    if (timestamp != null) {</span>
 <span class="fc" id="L57">      return ZonedDateTime.ofInstant(timestamp.toInstant(), ZoneId.systemDefault());</span>
     }
-<span class="nc" id="L59">    return null;</span>
+<span class="fc" id="L59">    return null;</span>
   }
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

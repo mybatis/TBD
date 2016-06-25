@@ -42,21 +42,21 @@ import java.time.ZoneId;
 
   @Override
   public OffsetDateTime getNullableResult(ResultSet rs, int columnIndex) throws SQLException {
-<span class="nc" id="L45">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
-<span class="nc" id="L46">    return getOffsetDateTime(timestamp);</span>
+<span class="fc" id="L45">    Timestamp timestamp = rs.getTimestamp(columnIndex);</span>
+<span class="fc" id="L46">    return getOffsetDateTime(timestamp);</span>
   }
 
   @Override
   public OffsetDateTime getNullableResult(CallableStatement cs, int columnIndex) throws SQLException {
-<span class="nc" id="L51">    Timestamp timestamp = cs.getTimestamp(columnIndex);</span>
-<span class="nc" id="L52">    return getOffsetDateTime(timestamp);</span>
+<span class="fc" id="L51">    Timestamp timestamp = cs.getTimestamp(columnIndex);</span>
+<span class="fc" id="L52">    return getOffsetDateTime(timestamp);</span>
   }
 
   private static OffsetDateTime getOffsetDateTime(Timestamp timestamp) {
-<span class="pc bpc" id="L56" title="1 of 2 branches missed.">    if (timestamp != null) {</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">    if (timestamp != null) {</span>
 <span class="fc" id="L57">      return OffsetDateTime.ofInstant(timestamp.toInstant(), ZoneId.systemDefault());</span>
     }
-<span class="nc" id="L59">    return null;</span>
+<span class="fc" id="L59">    return null;</span>
   }
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
