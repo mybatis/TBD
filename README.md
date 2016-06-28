@@ -16,7 +16,7 @@ If you are using mybatis version 3.4 or later, you can simply add this artifact 
 <dependency>
   <groupId>org.mybatis</groupId>
   <artifactId>mybatis-typehandlers-jsr310</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
@@ -31,6 +31,8 @@ If you are using an older version you need to register the type handlers manuall
   <typeHandler handler="org.apache.ibatis.type.OffsetDateTimeTypeHandler" />
   <typeHandler handler="org.apache.ibatis.type.OffsetTimeTypeHandler" />
   <typeHandler handler="org.apache.ibatis.type.ZonedDateTimeTypeHandler" />
+  <typeHandler handler="org.apache.ibatis.type.YearTypeHandler" />
+  <typeHandler handler="org.apache.ibatis.type.MonthTypeHandler" />
 </typeHandlers>
 ```
 
