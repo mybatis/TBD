@@ -61,7 +61,7 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-
+    <osgi.export>org.apache.ibatis.type;version=${project.version};-noimport:=true</osgi.export>
     <signature.artifact>java18</signature.artifact>
     <signature.version>1.0</signature.version>
   </properties>
