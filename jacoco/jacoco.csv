@@ -2,7 +2,9 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalDateTimeTypeHandler,0,37,0,2,0,12,0,7,0,6
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,OffsetTimeTypeHandler,0,41,0,2,0,12,0,7,0,6
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,YearTypeHandler,0,42,0,6,0,9,0,8,0,5
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,JapaneseDateTypeHandler,0,40,0,2,0,12,0,7,0,6
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalDateTypeHandler,0,37,0,2,0,12,0,7,0,6
+mybatis-typehandlers-jsr310,org.apache.ibatis.type,YearMonthTypeHandler,0,42,0,6,0,9,0,8,0,5
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,MonthTypeHandler,0,42,0,6,0,9,0,8,0,5
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,InstantTypeHandler,0,37,0,2,0,12,0,7,0,6
 mybatis-typehandlers-jsr310,org.apache.ibatis.type,LocalTimeTypeHandler,0,37,0,2,0,12,0,7,0,6
