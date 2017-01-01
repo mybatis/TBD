@@ -20,7 +20,7 @@ If you are using mybatis version 3.4 or later, you can simply add this artifact 
 </dependency>
 ```
 
-If you are using an older version you need to register the type handlers manually.
+If you are using an older version you need to register the type handlers manually.  These are latest since Mybatis 3.4.2.
 
 ```xml
 <typeHandlers>
@@ -33,6 +33,8 @@ If you are using an older version you need to register the type handlers manuall
   <typeHandler handler="org.apache.ibatis.type.ZonedDateTimeTypeHandler" />
   <typeHandler handler="org.apache.ibatis.type.YearTypeHandler" />
   <typeHandler handler="org.apache.ibatis.type.MonthTypeHandler" />
+  <typeHandler handler="org.apache.ibatis.type.YearMonthTypeHandler" />
+  <typeHandler handler="org.apache.ibatis.type.JapaneseDateTypeHandler" />
 </typeHandlers>
 ```
 
