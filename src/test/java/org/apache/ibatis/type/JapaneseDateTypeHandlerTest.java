@@ -18,8 +18,8 @@ package org.apache.ibatis.type;
 import org.junit.Test;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.time.chrono.JapaneseDate;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -30,7 +30,7 @@ public class JapaneseDateTypeHandlerTest extends BaseTypeHandlerTest {
 
   private static final TypeHandler<JapaneseDate> TYPE_HANDLER = new JapaneseDateTypeHandler();
   private static final JapaneseDate JAPANESE_DATE = JapaneseDate.now();
-  private static final Date DATE = new Date(TimeUnit.DAYS.toMillis(JAPANESE_DATE.toEpochDay()));
+  private static final Date DATE = Date.valueOf(LocalDate.ofEpochDay(JAPANESE_DATE.toEpochDay()));
 
   @Override
   @Test

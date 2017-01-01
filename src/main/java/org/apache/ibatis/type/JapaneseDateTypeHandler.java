@@ -20,8 +20,8 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.chrono.JapaneseDate;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Type Handler for {@link JapaneseDate}.
@@ -34,7 +34,7 @@ public class JapaneseDateTypeHandler extends BaseTypeHandler<JapaneseDate> {
   @Override
   public void setNonNullParameter(PreparedStatement ps, int i, JapaneseDate parameter, JdbcType jdbcType)
           throws SQLException {
-    ps.setDate(i, new Date(TimeUnit.DAYS.toMillis(parameter.toEpochDay())));
+    ps.setDate(i, Date.valueOf(LocalDate.ofEpochDay(parameter.toEpochDay())));
   }
 
   @Override
