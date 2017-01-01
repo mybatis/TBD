@@ -27,7 +27,7 @@
   </parent>
 
   <artifactId>mybatis-typehandlers-jsr310</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>mybatis-typehandlers-jsr310</name>
@@ -40,7 +40,7 @@
     <url>http://github.com/mybatis/typehandlers-jsr310</url>
     <connection>scm:git:ssh://github.com/mybatis/typehandlers-jsr310.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/mybatis/typehandlers-jsr310.git</developerConnection>
-    <tag>mybatis-typehandlers-jsr310-1.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Management</system>
