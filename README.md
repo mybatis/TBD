@@ -16,7 +16,7 @@ If you are using mybatis version 3.4 or later, you can simply add this artifact 
 <dependency>
   <groupId>org.mybatis</groupId>
   <artifactId>mybatis-typehandlers-jsr310</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
