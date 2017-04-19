@@ -1,5 +1,5 @@
 /**
- *    Copyright 2016 the original author or authors.
+ *    Copyright 2016-2017 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -15,14 +15,13 @@
  */
 package org.apache.ibatis.type;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import java.time.Month;
 
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * 
@@ -44,7 +43,7 @@ public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultFromResultSetByName() throws Exception {
     when(rs.getInt("column")).thenReturn(INSTANT.getValue());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isEqualTo(INSTANT);
   }
 
   @Override
@@ -52,14 +51,14 @@ public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromResultSetByName() throws Exception {
     when(rs.getInt("column")).thenReturn(0);
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromResultSetByPosition() throws Exception {
     when(rs.getInt(1)).thenReturn(INSTANT.getValue());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isEqualTo(INSTANT);
   }
 
   @Override
@@ -67,14 +66,14 @@ public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromResultSetByPosition() throws Exception {
     when(rs.getInt(1)).thenReturn(0);
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromCallableStatement() throws Exception {
     when(cs.getInt(1)).thenReturn(INSTANT.getValue());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isEqualTo(INSTANT);
   }
 
   @Override
@@ -82,7 +81,7 @@ public class MonthTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getInt(1)).thenReturn(0);
     when(cs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isNull();
   }
 
 }

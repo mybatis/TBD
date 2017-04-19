@@ -1,5 +1,5 @@
 /**
- *    Copyright 2016 the original author or authors.
+ *    Copyright 2016-2017 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -21,8 +21,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.time.chrono.JapaneseDate;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -43,7 +42,7 @@ public class JapaneseDateTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultFromResultSetByName() throws Exception {
     when(rs.getDate("column")).thenReturn(DATE);
-    assertEquals(JAPANESE_DATE, TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isEqualTo(JAPANESE_DATE);
   }
 
   @Override
@@ -51,14 +50,14 @@ public class JapaneseDateTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromResultSetByName() throws Exception {
     when(rs.getDate("column")).thenReturn(null);
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromResultSetByPosition() throws Exception {
     when(rs.getDate(1)).thenReturn(DATE);
-    assertEquals(JAPANESE_DATE, TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isEqualTo(JAPANESE_DATE);
   }
 
   @Override
@@ -66,14 +65,14 @@ public class JapaneseDateTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromResultSetByPosition() throws Exception {
     when(rs.getDate(1)).thenReturn(null);
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromCallableStatement() throws Exception {
     when(cs.getDate(1)).thenReturn(DATE);
-    assertEquals(JAPANESE_DATE, TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isEqualTo(JAPANESE_DATE);
   }
 
   @Override
@@ -81,7 +80,7 @@ public class JapaneseDateTypeHandlerTest extends BaseTypeHandlerTest {
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.getDate(1)).thenReturn(null);
     when(cs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isNull();
   }
 
 }

@@ -1,5 +1,5 @@
 /**
- *    Copyright 2016 the original author or authors.
+ *    Copyright 2016-2017 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -16,9 +16,10 @@
 package org.apache.ibatis.type;
 
 import java.time.YearMonth;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -41,42 +42,42 @@ public class YearMonthTypeHandlerTest extends BaseTypeHandlerTest {
   @Test
   public void shouldGetResultFromResultSetByName() throws Exception {
     when(rs.getString("column")).thenReturn(INSTANT.toString());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isEqualTo(INSTANT);
   }
 
   @Override
   @Test
   public void shouldGetResultNullFromResultSetByName() throws Exception {
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, "column"));
+    assertThat(TYPE_HANDLER.getResult(rs, "column")).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromResultSetByPosition() throws Exception {
     when(rs.getString(1)).thenReturn(INSTANT.toString());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isEqualTo(INSTANT);
   }
 
   @Override
   @Test
   public void shouldGetResultNullFromResultSetByPosition() throws Exception {
     when(rs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(rs, 1));
+    assertThat(TYPE_HANDLER.getResult(rs, 1)).isNull();
   }
 
   @Override
   @Test
   public void shouldGetResultFromCallableStatement() throws Exception {
     when(cs.getString(1)).thenReturn(INSTANT.toString());
-    assertEquals(INSTANT, TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isEqualTo(INSTANT);
   }
 
   @Override
   @Test
   public void shouldGetResultNullFromCallableStatement() throws Exception {
     when(cs.wasNull()).thenReturn(true);
-    assertNull(TYPE_HANDLER.getResult(cs, 1));
+    assertThat(TYPE_HANDLER.getResult(cs, 1)).isNull();
   }
 
 }
