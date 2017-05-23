@@ -64,6 +64,8 @@
     <osgi.export>org.apache.ibatis.type;version=${project.version};-noimport:=true</osgi.export>
     <signature.artifact>java18</signature.artifact>
     <signature.version>1.0</signature.version>
+
+    <clirr.comparisonVersion>1.0.2</clirr.comparisonVersion>
   </properties>
 
   <dependencies>
@@ -92,7 +94,7 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.6.2</version>
+      <version>3.8.0</version>
       <scope>test</scope>
     </dependency>
 
