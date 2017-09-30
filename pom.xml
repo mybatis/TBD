@@ -70,6 +70,10 @@
 
   <dependencies>
 
+    <!--
+      Should keep 3.4.4 because since 3.4.5 includes same classes provided by this project.
+      See https://github.com/mybatis/typehandlers-jsr310/issues/48.
+    -->
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
