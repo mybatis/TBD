@@ -1,3 +1,8 @@
+❗️ Note:  
+❗️ Type handlers for "JSR 310: Date and Time API" has been merged into mybatis core since 3.4.5. (See [#974](https://github.com/mybatis/mybatis-3/pull/974))
+
+----
+
 # MyBatis Type Handlers for JSR 310: Date and Time API
 
 [![Build Status](https://travis-ci.org/mybatis/typehandlers-jsr310.svg?branch=master)](https://travis-ci.org/mybatis/typehandlers-jsr310)
@@ -9,10 +14,6 @@
 ![mybatis](http://mybatis.github.io/images/mybatis-logo.png)
 
 The MyBatis type handlers supporting types introduced in JSR 310: Date and Time API.
-
-> **Note:**
->
-> **Type handlers for "JSR 310: Date and Time API" has been merged into mybatis core since 3.4.5. (See [#974](https://github.com/mybatis/mybatis-3/pull/974))**
 
 ## Installation
 
